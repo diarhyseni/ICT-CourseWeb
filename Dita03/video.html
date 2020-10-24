@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEO</title>
+</head>
+<body>
+    <h1>Videos</h1>
+    <!--Menyra e rregullt controls="controls"  bon edhe controls -->
+    <!--Mungon autoplay sherben me fillu ne menyre automatike,
+         pa muted nuk fillon,
+          poster sherben per me qit foto ne fillim
+            loop ssherben mos mu nal video vazhdon gjithmon prej fillimit 
+            -->
+    <video width="480" height="360" 
+    controls="controls"  
+    muted loop poster="images/butoni.jpg">
+    <!--I listojme llojet e videos me radhe nga e para sepse varet cilen e supporton browseri
+    browseri e merr sourcin e pare nese sbon del te i dyti-->
+        <source src="videos/video2.webm" type="video/webm"> 
+        <source src="videos/video.mp4" type="video/mp4"> 
+            <!--Per titra-->
+            <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+                <track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+            Your browser does not support this type of video.
+    </video> 
+</body>
+</html>
