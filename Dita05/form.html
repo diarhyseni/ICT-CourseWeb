@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularet</title>
+    <style>
+        #emri_mbiemri {
+            width: 360px;
+            height: 40px;
+            font-size: 1.5em;
+            background-color: cornsilk;
+            border: 3px solid darkblue;
+            /* border-radius = me % komplet lakoren me px veq border */
+            border-radius: 40px;
+        }
+        
+        #mosha {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="POST" action="proceso.html">
+        <div>
+            <!-- ku do qe klikon ne label kursoni na del ne input text -->
+            <!-- <label for="emri_mbiemri">Sheno emrin dhe mbiemrin: </label> -->
+            <!-- name percakton si do te quhet kjo fushe ne server
+        Id lidhet me label -->
+            <input type="text" id="emri_mbiemri" name="emri_mbiemri" size="40" placeholder="Sheno emrin dhe mbiemrin:">
+        </div>
+        <div>
+            <label for="mosha">Sheno moshen: </label>
+            <input type="number" id="mosha" name="mosha" placeholder="Sheno Mosha" value="0" min="0" max="10" step="2">
+        </div>
+        <div>
+            <input type="submit" value="Dergo">
+        </div>
+    </form>
+</body>
+
+</html>

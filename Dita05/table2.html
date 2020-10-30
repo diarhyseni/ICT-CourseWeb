@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-size: 20px;
+            /* e shendron vleren e em ne 20 px, normal e ka 16px */
+        }
+        
+        #lista1 {
+            /* == me cellsspace , e kontrollon distancen midis qelizave , nuk funksionon me collapse veq me separate*/
+            border-spacing: 0.5em;
+            /* mi hek dy muret, i kollapson muret */
+            /* border-collapse: collapse; */
+            border-collapse: separate;
+            width: 100%;
+            border: 4px solid tomato;
+            background-color: palegoldenrod;
+        }
+        
+        #lista1 caption {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            /* e qet caption nfund, by default osht ntop */
+            caption-side: bottom;
+        }
+        /* Formatimi i qelizave te tables */
+        
+        #lista1 td,
+        th {
+            border: 1px dotted gray;
+            padding: 6px;
+        }
+        
+        #lista1 th {
+            /* e rrit specificitetin*/
+            background-color: plum !important;
+        }
+        
+        #rreshti1 {
+            background-color: greenyellow;
+        }
+        
+        #lista2 {
+            border: 2px dashed orangered;
+        }
+        
+        #lista1 .portokall {
+            background-color: orange;
+        }
+        
+        .emrat {
+            text-align: center;
+            vertical-align: top;
+        }
+        
+        #lista1 tfoot {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- e shumezon 20px * 2 * 3 = 120px -->
+    <div style="font-size: 2em;">
+        <div style="font-size: 3em;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nesciunt, magnam, explicabo, soluta exercitationem nihil asperiores ea modi ad eos accusamus reprehenderit est qui unde sapiente magni? Architecto, nam labore!</p>
+        </div>
+    </div>
+    <!-- me rem nuk merren parasysh pra nuk shumezohen metet 3em == 16px*3 = 48px -->
+    <div style="font-size: 2rem;">
+        <div style="font-size: 3rem;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nesciunt, magnam, explicabo, soluta exercitationem nihil asperiores ea modi ad eos accusamus reprehenderit est qui unde sapiente magni? Architecto, nam labore!</p>
+        </div>
+    </div>
+    <table id="lista1">
+        <caption>
+            Lista e studenteve
+        </caption>
+        <thead>
+            <tr id="rreshti1">
+                <th>Emri dhe Mbiemri</th>
+                <th class="portokall">Email</th>
+                <th>Qyteti</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="emrat">Diar Hyseni</td>
+                <td class="portokall">diarhyseni4@gmail.com</td>
+                <td>Mitrovica</td>
+            </tr>
+            <tr height="100">
+                <!-- valign="top" align="center" -->
+                <td class="emrat">Edmond Kadriu</td>
+                <td class="portokall">edmond.kadriu@gmail.com</td>
+                <td>Mitrovica</td>
+            </tr>
+            <tr>
+                <td class="emrat">Azmir Arifi</td>
+                <td class="portokall">azmir.arifi@gmail.com</td>
+                <td>Mitrovica</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Gjithsej</td>
+                <td>3 studente</td>
+                <td>1 qytet</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table id="lista2">
+        <tr>
+            <td>AAAAA</td>
+            <td>BBBBB</td>
+            <td>CCCCC</td>
+        </tr>
+        <tr>
+            <td>11111</td>
+            <td>22222</td>
+            <td>33333</td>
+        </tr>
+
+
+    </table>
+</body>
+
+</html>
