@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .thekso{
+        color: red;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .thekso2{
+        display: block;
+    }
+    #div2 p{
+        position: relative;
+        top: 50px;
+        left: 150px;
+        /* by defaut jon elementet static */
+    }
+    #div1, #div2, #div3, #div4, #div5{
+        border: 1px solid black;
+    }
+    #div3{
+        margin-left: 100px;
+        position: relative;
+    }
+    /* kur fmija nkete rast div4 eshte absolute  prindi nuk bon me kon static preferohet relative ose absolute
+    statit renditen njeri pas tjetrit 
+    relative njejt po munet mu zhvendos ma shume top-left*/
+    /* position absolute nuk bohet scroll rrin ne menyre permanente ne faqe */
+    #div4 {
+        position: absolute;
+        background-color: bisque;
+        top: 50px;
+        left: 300px;
+        
+        width: 400px;
+        z-index: 2;
+    }
+    /* z-index jep prioritet se kush duhet me dal perpara
+    1 para 2   kur dojna gjith me dal perpara 9999 , gjith permas -9999 */
+    #div5{
+        position: absolute;
+        z-index: -3;
+        background-color: blue;
+        color: white;
+        top: 50px;
+        left: 70px;
+        width: 300px;
+    }
+</style>
+<body>
+    <!-- Pozita Statike qysh renditen Tagat -->
+    <!-- Fix Layout PX , Fluid Layout %
+    me fix nuk leviz ka madhesi fikse me fluid shtihet varesisht nga madhesia e faqes -->
+    <div id="div1">
+        <!-- Display inline nuk i qet ne rresht te ri , vijn njoni mas tjetrit -->
+    <p>Lorem <strong>ipsum</strong> dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporis est maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem <em>ipsum dolor sit</em> amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporis est maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur <span class="thekso">ut dolor quis, corporis</span>est maiores quibusdam <span class="thekso2">nostrum doloribus tempore in </span>quam.</p>
+</div>
+<!-- span mi jep veti tekstit mrenda paragrafit pa dal ne rresht te ri -->
+    <!-- <div>
+        <img src="images/iPhone+12+and+iPhone+12+mini+(PRODUCT)RED.png" alt="" width="200" height="250" >
+        <img src="images/NutraburstV2-NewSite-1.png" alt="" width="200" height="250" >
+        <img src="images/products hero.png" alt="" width="200" height="250" >
+        <img src="images/Resolution-NewSite.png" alt="" width="200" height="250" >
+        <img src="images/versa2-3qtr-black.png" alt="" width="200" height="250" >
+    </div> -->
+    <div id="div2">
+    <p>Lorem <strong>ipsum</strong> dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporis est maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem <em>ipsum dolor sit</em> amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporis est maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur <span class="thekso">ut dolor quis, corporis</span>est maiores quibusdam <span class="thekso2">nostrum doloribus tempore in </span>quam.</p>
+    </div>
+    <div id="div3">
+        #div3
+        <div id="div4">
+            #div4
+    <p>Lorem dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporis est maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporis est maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporisest maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporis est maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporis est maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporisest maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporis est maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporis est maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporisest maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporis est maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporis est maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporisest maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporis est maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporis est maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporisest maiores quibusdam nostrum doloribus tempore in quam.</p>
+</div>
+<div id="div5">
+    <p>Lorem dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporis est maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporis est maiores quibusdam nostrum doloribus tempore in quam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id tempora nesciunt similique culpa quo quisquam? Maxime molestias consequatur ut dolor quis, corporisest maiores quibusdam nostrum doloribus tempore in quam.</p>
+</div>
+</div>
+</body>
+</html>

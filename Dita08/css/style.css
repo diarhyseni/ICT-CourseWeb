@@ -1,0 +1,14 @@
+.img-fluid{
+    max-width: 100%;
+}
+footer{
+    background-color: darkgray;
+    color: white;
+
+}
+footer p {
+    text-align: center;
+}
+aside{
+    background-color: lightgoldenrodyellow;
+}

@@ -1,0 +1,26 @@
+body{
+    background-color: slategrey;
+}
+footer{
+    text-align: center;
+   background-color: black;
+   color: white;
+   padding: 8px; 
+}
+nav{
+    margin-left: -38px;
+}
+.container{
+    background-color: white;
+}
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
+    
+    background-color: white;
+}
+.bardhe {
+    background-color: white;
+}
+
+article, aside{
+    padding: 6px;
+}
