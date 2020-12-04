@@ -1,0 +1,101 @@
+nav {
+    position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    top: 0;
+}
+
+
+#menu li {
+    display: inline-block;
+    width: 120px;
+
+    margin: 4px;
+    position: relative;
+    padding:4px ;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+/* css gradient */
+    
+}
+
+#menu > li {
+    
+    text-align: center;
+    font-size: 1em;
+    border-radius: 10px 10px 0  0;
+    font-weight: bold;
+    border: 1px solid darkblue;
+    border-bottom: 4px solid yellowgreen;
+   
+}
+#menu li:hover  {
+    background-color: darkblue;
+    box-shadow: 4px 4px 7px gray;
+    border-bottom: 4px solid yellow;
+    
+}
+#menu>li:hover {
+    border: 1px solid orange;
+    border-bottom: 4px solid yellow;
+}
+#menu li:hover a {
+    color: whitesmoke;
+}
+#menu > li li {
+    text-align: left;
+    font-weight: 300;
+    /* fonti sa mu kon i trash 100 deri 900 jon zakonisht */
+    
+}
+#menu>li li a {
+    color: gold!important;
+}
+#menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    display: block;
+    font-size: 1em;
+
+}
+#menu li a:hover{
+    text-decoration: none;
+}
+
+ul {
+    display: inline;
+}
+
+#menu li ul{
+    display:none;
+
+}
+/* pseudoklase HOVER */
+#menu li:hover ul {
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: -36px;
+    opacity: 0.9;
+
+}
+#menu li:hover ul li {
+    display: block;
+}
+
+@media screen and (max-width: 767px){
+    
+    #menu>li{
+        display: block;
+        
+    }
+    #menu>li ul{
+        
+        position: absolute;
+        top: 0;
+       
+    }
+}

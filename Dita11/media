@@ -1,0 +1,22 @@
+@media (min-width: 992px){
+            .container{
+                max-width: 960px;
+                flex-direction: row;
+            }
+            .box-1{
+            background-color: red;
+            /* width: 75%; */
+            flex-basis: 75%;
+            /* align-self: flex-end; */
+            /* width: 100px; */
+            /* height: 100px; */
+        }
+        .box-2{
+            background-color: orangered;
+           flex-basis: 25%;
+           /* width: 25%; */
+            /* align-self: center; */
+            /* width: 150px; */
+            /* height: 150px; */
+        }
+        }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div p {
+            background-color: yellow;
+        } */
+        /* div > p per pasardhesit e drejtperdrejte */
+        #div1>p {
+            background-color: yellow;
+        }
+        /* qe jon ni nivel me div1 */
+        #div1 ~ p {
+            background-color: orange;
+        }
+        /*#div1 ~ h1 {
+            background-color: greenyellow;
+        }  */
+        #div1>h1 {
+            background-color: greenyellow;
+        }
+        .i_dyti{
+            font-weight: bold;
+            font-style: italic;
+        }
+        /* div.i_dyti>h4+p {
+            background-color: aquamarine;
+        } */
+        div.i_dyti>h4+p:nth-child(2) {
+            background-color: aquamarine;
+        }
+        h1.i_dyti{
+            text-transform: uppercase;
+        }
+        #div1b.i_dyti{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <h1>titull1 div1</h1>
+        <div class="i_dyti" id="div1b">
+            <h1>Titulli 1 div1</h1>
+        <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore odio quisquam praesentium vel! Aperiam culpa repellendus, est, eius illum totam magnam perferendis quaerat molestias fugit iure tenetur saepe animi temporibus.</p>
+        <div>
+            <p>2.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sint ullam, doloribus eveniet necessitatibus omnis deserunt optio temporibus nisi quam, tenetur, sapiente ipsam earum est quasi neque ad maxime dolorum.</p>
+        </div>
+    </div>
+        <p>3.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quidem beatae et, corrupti accusantium quisquam aliquid atque corporis, ab iure magnam quaerat voluptatum non facere rerum! Repudiandae aliquam repellendus reiciendis!</p>
+    </div>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex voluptatum repellendus, excepturi eos a assumenda aliquid earum nesciunt vel beatae magnam, facere corrupti delectus voluptate porro? Sit saepe ea labore!</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim sapiente autem consequuntur voluptatem recusandae. Fugit officia expedita possimus itaque praesentium, enim quisquam cum aspernatur recusandae explicabo necessitatibus culpa quo beatae.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim sapiente autem consequuntur voluptatem recusandae. Fugit officia expedita possimus itaque praesentium, enim quisquam cum aspernatur recusandae explicabo necessitatibus culpa quo beatae.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim sapiente autem consequuntur voluptatem recusandae. Fugit officia expedita possimus itaque praesentium, enim quisquam cum aspernatur recusandae explicabo necessitatibus culpa quo beatae.</p>
+    <div>
+        <h4>Titulli</h4>
+        <p>4.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, dolore qui earum eius in facere libero saepe tempora, molestias cupiditate labore porro ea voluptas officiis beatae aliquam recusandae voluptatum quas.</p>
+        <p>5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aspernatur ipsum quos qui dolorem veritatis sequi maxime repellat ratione, rem molestiae? Qui ullam quod excepturi sit tenetur fugit facilis saepe.</p>
+    </div>
+
+    <div id="div2"></div>
+    <h1 class="i_dyti">Titulli i madh</h1>
+    <div class="i_dyti">
+        <h4>Titulli 2</h4>
+        <p>6.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, dolore qui earum eius in facere libero saepe tempora, molestias cupiditate labore porro ea voluptas officiis beatae aliquam recusandae voluptatum quas.</p>
+        <p>7. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aspernatur ipsum quos qui dolorem veritatis sequi maxime repellat ratione, rem molestiae? Qui ullam quod excepturi sit tenetur fugit facilis saepe.</p>
+        <div>
+            <h4>Titulli 3</h4>
+            <p class="thekso">8.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, dolore qui earum eius in facere libero saepe tempora, molestias cupiditate labore porro ea voluptas officiis beatae aliquam recusandae voluptatum quas.</p>
+            <p>9. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aspernatur ipsum quos qui dolorem veritatis sequi maxime repellat ratione, rem molestiae? Qui ullam quod excepturi sit tenetur fugit facilis saepe.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

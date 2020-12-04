@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* input:checked {
+        height: 50px;
+        width: 50px;
+      } */
+    input[type=checkbox]:checked {
+        height: 50px;
+        width: 50px;
+      }
+    input[type=radio]:checked {
+        height: 30px;
+        width: 30px;
+      }
+     
+    input[type=text] {
+       background-color: lawngreen;
+      }
+      input:disabled{
+          border: 6px solid red;
+      }
+      </style>
+</head>
+<body>
+    
+    <p>Sheno emrin: <input type="text" disabled> </p>
+    <p>Sheno Mbiemrin: <input type="text"> </p>
+
+   <p> <input type="checkbox" >Opsioni 1</p>
+   <p> <input type="checkbox" >Opsioni 2</p>
+   <p> <input type="checkbox" >Opsioni 3</p>
+
+   <p> <input type="radio" name="opc" checked>Opsioni 31</p>
+   <p> <input type="radio" name="opc">Opsioni 2</p>
+   <p> <input type="radio" name="opc">Opsioni 3</p>
+</body>
+</html>

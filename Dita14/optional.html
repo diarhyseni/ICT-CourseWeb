@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        input:optional {
+            background-color: yellow;
+        }
+        input:required {
+            background-color: lightsalmon;
+        }
+        input:read-only{
+            border: 10px solid black;
+        }
+        input:read-write{
+            border: 10px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Emri dhe mbiemri:<input  readonly type="text" name="emri_dhe_mbiemri"></p>
+    <p>Emri dhe mbiemri:<input required type="text" name="emri_dhe_mbiemri"></p>
+
+</body>
+
+</html>

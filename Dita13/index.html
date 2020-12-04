@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p {
+            line-height: 1.5;
+            text-align: left;
+            /* text-decoration: overline; */
+            /* text-decoration: line-through; */
+        }
+
+        .nenvizimi {
+            text-decoration: underline;
+            text-decoration-color: red;
+            text-decoration-style: dashed;
+        }
+
+        .markimi {
+            background-color: yellow;
+        }
+
+        mark {
+            background-color: orange;
+        }
+
+        .vogel {
+            font-size: 0.85;
+        }
+
+        .fshire {
+            text-decoration: line-through;
+        }
+
+        .eksponent {
+            position: relative;
+            font-size: 0.5em;
+            top: -6px;
+
+        }
+
+        .indeksi {
+            position: relative;
+            font-size: 0.5em;
+            bottom: -4px;
+
+        }
+
+        /* sup {
+            position: relative;
+            font-size: 0.5em;
+            top: -6px;
+
+        }
+        sub {
+            position: relative;
+            font-size: 0.5em;
+            bottom: -4px;
+
+        } */
+        blockquote {
+            padding: 16px;
+            font-style: italic;
+            border: 1px solid black;
+            background-color: palegoldenrod;
+        }
+
+        q {
+            font-style: italic;
+        }
+
+        .shkurtesa {
+            border-bottom: 2px dotted black;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        .d1 {
+            margin-left: 100px;
+        }
+
+        #p1 {
+            /* text-indent: 20px;  */
+            text-indent: -20px;
+            /* distanda para fjales se pare */
+            /* white-space:nowrap; */
+            /*  nuk tehhet */
+            white-space: pre;
+            /* paraqitet ashtu siq eshte me hapesira */
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="d1">
+        <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Incidunt, impedit
+            odit. Eligendi cum suscipit,
+            in, facilis dolore illum quos perferendis eaque sit odit
+            modi ab, libero quasi maiores ullam officia!
+        </p>
+            <code><?php
+        echo 123*78; 
+        ?</code>
+        <pre>
+            <code><?php
+                    echo 123*78; 
+                    ?
+            </code>
+        </pre>
+    </div>
+    
+
+
+    <hr>
+
+    </div>
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sit, dolorem aliquid voluptatem consequuntur
+        deserunt. Sequi ut culpa id. Nam reprehenderit voluptate nobis a veniam quaerat ea eveniet magnam non.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, assumenda sint facilis consequatur voluptatum
+        odio nisi alias quasi porro. Amet rerum totam obcaecati alias at eum, enim quam ea odio.</p>
+    <hr>
+    <!-- Emertimi i produktit -->
+    <h1>Lorem, ipsum.</h1>
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+    <bdo dir="lrt">Diar Hyseni</bdo>
+    <!-- Ne vazhdim eshte adresa -->
+    <address>
+        Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <p>The <span class="shkurtesa" title="World Health Organization">WHO</span> was founded in 1948.</p>
+
+
+    <p>Browsers usually indent blockquote elements.</p>
+    <blockquote>
+        For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation
+        organization, WWF works in 100 countries and is supported by more than one million members in the United States
+        and close to five million globally.
+    </blockquote>
+
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+
+
+    <p>H<span class="indeksi">2</span>O</p>
+    <p>
+        e=mc<span class="eksponent">2</span>
+    </p>
+    <p>
+        H<sub>2</sub>O
+    </p>
+    <p>
+        e=mc<sup>2</sup>
+    </p>
+    <p>
+        <span class="nenvizimi">Lorem ipsum dolor </span>
+        <mark>sit amet consectetur adipisicing elit.</mark>
+        <span class="markimi">sit amet consectetur adipisicing </span>
+        <small>Porro, blanditiis repu. Exercitationem </small>
+        <span class="vogel">Porro, blanditiis. Exercitationem </span>
+        <del>repudiandae vel aliquid dolorem enim </del>
+        <span class="fshire">repudiandae vel aliquid dolorem </span>
+        <ins>expedita adipisci, aliquam </ins>
+
+        tenetur accusamus ab assumenda, placeat et distinctio, nihil consectetur minus.</p>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline</title>
+    <style>
+        .container{
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: aqua;
+            outline: 2px solid red;
+            
+        }
+        .article{
+            vertical-align: top;
+            width: 620px;
+            display: inline-block;
+            background-color: burlywood;
+        }
+        .aside{
+            vertical-align: top;
+            width: 320px;
+            display: inline-block;
+            background-color: darksalmon;
+        }
+        .footer{
+            width: 100%;
+            background-color: black;
+            color: white;
+           
+        }
+        main{
+            background-color: darkseagreen;
+        }
+        @media screen and (max-width: 640px) {
+            .aside, .article{
+                display: block;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main>
+        <article class="article">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum provident libero autem ipsa expedita iusto esse nobis deserunt aut odio reiciendis laudantium nulla, quaerat quasi facere commodi! Reiciendis, hic veniam!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum provident libero autem ipsa expedita iusto esse nobis deserunt aut odio reiciendis laudantium nulla, quaerat quasi facere commodi! Reiciendis, hic veniam!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum provident libero autem ipsaLorem ipsum dolor, sit amet consectetur adipisicing elit. Harum provident libero autem ipsa expedita iusto esse nobis deserunt aut odio reiciendis laudantium nulla, quaerat quasi facere commodi! Reiciendis, hic veniam!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum provident libero autem ipsa expedita iusto esse nobis deserunt aut odio reiciendis laudantium nulla, quaerat quasi facere commodi! Reiciendis, hic veniam!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum provident libero autem ipsa expedita iusto esse nobis deserunt aut odio reiciendis laudantium nulla, quaerat quasi facere commodi! Reiciendis, hic veniam! expedita iusto esse nobis deserunt aut odio reiciendis laudantium nulla, quaerat quasi facere commodi! Reiciendis, hic veniam!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum provident libero autem ipsa expedita iusto esse nobis deserunt aut odio reiciendis laudantium nulla, quaerat quasi facere commodi! Reiciendis, hic veniam!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum provident libero autem ipsa expedita iusto esse nobis deserunt aut odio reiciendis laudantium nulla, quaerat quasi facere commodi! Reiciendis, hic
+            sit amet consectetur adipisicing elit. Harum provident libero autem ipsa expedita iusto esse nobis deserunt aut odio reiciendis laudantium nulla, quaerat quasi facere commodi! Reiciendis, hi veniam!</article>
+        <aside class="aside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa tempora dignissimos odio tenetur corporis nostrum providsent ut, dolorum vel est quam dolore architecto repellendus quasi pariatur atque eius voluptatem modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores cumque explicabo iste placeat sapiente dignissimos, animi vero dolorem voluptate natus ab libero. Nam, obcaecati. In consequuntur dolor minus aspernatur non! Lorem ipsum dolor sit amet consectetur adipisicing elit. A porro voluptas, est unde, ducimus sequi quae impedit corrupti quam ipsam facere vero. Dolore eum numquam quibusdam ea corrupti. Corporis, temporibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, dolorum! Blanditiis ad ex quaerat amet dicta? Quia explicabo suscipit obcaecati, officiis sit voluptate aliquid soluta odio fugiat ipsam incidunt facere.lorem
+        </aside>
+    </main>
+        <footer class="footer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores harum unde nulla itaque quisquam? Excepturi quae incidunt voluptatum, magni rerum quia? Sapiente ipsa dolores rerum magni. Assumenda omnis itaque placeat?</footer>
+    </div>
+</body>
+</html>

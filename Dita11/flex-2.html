@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+    <style>
+        .container{
+            width: 960px;
+            /* height: 600px; */
+            margin-left: auto;
+            margin-right: auto;
+            background-color: thistle;
+            display: flex;
+            flex-direction: row;
+            /* ncilin drejtim me shku --> row , row-reverse , column, column-reverse */
+            flex-wrap: wrap;
+            /* flex-flow: row wrap; 2in 1 */
+            /* Kur e tejkalon rreshtin me dal nrresht tri */
+            justify-content: flex-start;
+            /* horizontalisht */
+            /* Space between me pas space te barabarte ne mes
+               Space-around mes edhe anash 1/2
+               Space-evenly krejt anet njejt edhe anash 
+               Stretch ska hapsira ne mes */
+               align-items: flex-start;
+               /* align-content: space-around ; */
+               /* vertikalisht */
+               /* align-self: flex-start; */
+        }
+        /* main{
+            display: flex;
+        } */
+        .box{
+            font-size: 1em;
+            color: white;
+            text-align: center;
+            /* width: 25%; */
+            /* height: 130px; */
+            /* flex-grow: 1; */
+            flex-basis: 25%;
+            
+        }
+        .box-1{
+            background-color: red;
+            /* width: 75%; */
+            /* flex-basis: 75%; */
+            order: 2;
+            /* align-self: flex-end; */
+            /* width: 100px; */
+            /* height: 100px; */
+               /* flex-grow: 4 ; */
+        }
+        .box-2{
+            background-color: orangered;
+           /* flex-basis: 100%; */
+           /* width: 25%; */
+            /* align-self: center; */
+            /* width: 150px; */
+            /* height: 150px; */
+            /* flex-grow: 2 ; */
+            order: 1;
+        }
+        .box-3{
+            background-color: orange;
+            /* width: 200px; */
+            /* height: 200px; */
+            /* flex-grow: 0 ; */
+            order: 4;
+        }
+        .box-4{
+            background-color: yellowgreen;
+            /* width: 250px; */
+            /* height: 250px; */
+            order: 3;
+        }
+        .box-5{
+            /* align-self: flex-end; */
+            background-color: green;
+            /* width: 300px; */
+            /* height: 300px; */
+            order: 5;
+        }
+        .box-6{
+            background-color: darkgreen;
+            /* width: 350px; */
+            /* height: 350px; */
+            order: 6;
+        }
+        /* .box-7{
+            background-color: violet;
+            width: 100px;
+        }
+        .box-8{
+            background-color: teal;
+            width: 150px;
+        }
+        .box-9{
+            background-color: steelblue;
+            width: 200px;
+        }
+        .box-10{
+            background-color: tomato;
+            width: 250px;
+        } */
+        
+      
+    </style>
+  
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+        <div class="box box-6">6</div>    
+        <!-- <div class="box box-7">7</div>    
+        <div class="box box-8">8</div>    
+        <div class="box box-9">9</div>    
+        <div class="box box-10">10</div>     -->
+    </div>
+
+</body>
+</html>

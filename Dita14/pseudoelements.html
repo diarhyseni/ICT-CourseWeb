@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        h1::before{
+            content: url(star.png);
+            color: red;
+            font-size: 1.5em;
+        }
+
+        h1::after{
+            /* content:"S"; */
+            content: url(star.png);
+            color: green;
+            font-size: 1.5em;
+        }
+        p{
+            text-indent: 10px;
+        }
+        /* p::first-letter{
+            font-size: 2em;
+            background-color: yellow;
+            border: 2px solid black;
+            border-radius: 5px;
+            box-shadow: 3px 3px 3px gray;
+            text-shadow: 3px 3px 3px gray;
+            color: #8A2BE2;
+        } */
+        p::first-line{
+            font-size: 2em;
+            background-color: yellow;
+            border: 2px solid black;
+            border-radius: 5px;
+            box-shadow: 3px 3px 3px gray;
+            text-shadow: 3px 3px 3px gray;
+            color: #8A2BE2;
+        }
+        .container{
+            width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit distinctio rerum voluptas incidunt harum, expedita dolorem necessitatibus laboriosam ea quaerat non vitae doloribus modi ex provident magnam voluptatibus aut in!</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi deleniti nemo, harum quos magni praesentium dolore ipsa assumenda quo accusamus illo dignissimos accusantium enim vero suscipit quibusdam quaerat ullam animi?</p>
+</div>
+</body>
+</html>
