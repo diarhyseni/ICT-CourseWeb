@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="numri1">Sheno numrin e pare: </label>
+    <input type="text" id="numri1">
+
+    <label for="numri2">Sheno numrin e dyte: </label>
+    <input type="text" id="numri2">
+
+    <!-- <input type="submit" value="KALKULO"> -->
+    <button id="kalkulo1" onclick="mbledhja()">+</button>
+    <button id="kalkulo4" onclick="zbritja()">-</button>
+    <button id="kalkulo2" onclick="shumezimi()">*</button>
+    <button id="kalkulo3" onclick="pjestimi()">/</button>
+
+    <script>
+        function mbledhja(){
+        n1 = document.getElementById("numri1").value
+        n2 = document.getElementById("numri2").value
+        
+
+        rezultati = parseInt(n1) + parseInt(n2)
+
+        alert(rezultati);
+        }
+        function zbritja(){
+        n1 = document.getElementById("numri1").value
+        n2 = document.getElementById("numri2").value
+        
+
+        rezultati = parseInt(n1) - parseInt(n2)
+
+        alert(rezultati);
+        }
+        function shumezimi(){
+        n1 = document.getElementById("numri1").value
+        n2 = document.getElementById("numri2").value
+        
+
+        rezultati = parseInt(n1) * parseInt(n2)
+
+        alert(rezultati);
+        }
+        function pjestimi(){
+        n1 = document.getElementById("numri1").value
+        n2 = document.getElementById("numri2").value
+        
+
+        rezultati = parseInt(n1) / parseInt(n2)
+
+        alert(rezultati);
+        }
+        
+
+    </script>
+</body>
+</html>
