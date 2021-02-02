@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 1em;
+        }
+        .teksti1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .teksti2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulli">Lorem ipsum dolor sit.</h1>
+    <button id="butoni1">Kliko</button>
+    <p class="teksti1">Lorem ipsum dolor sit amet.</p>
+    <p class="teksti1">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="teksti2">Lorem ipsum dolor sit.</p>
+    <p class="teksti2">Lorem ipsum dolor sit amet.</p>
+    <p class="teksti2">Lorem ipsum dolor sit amet consectetur.</p>
+    <button id="butoni2a">E vogel </button>
+    <button id="butoni2b">E mesme  </button>
+    <button id="butoni2c">E madhe </button>
+    <button id="butoni3">Teksti 3</button>
+    <button id="butoni4">Krejt Paragrafat</button>
+
+    <script>
+        document.querySelector("#butoni1").addEventListener("click", function(){
+        document.querySelector("#titulli").style.backgroundColor = "yellow"
+    });
+
+    document.querySelector("#butoni2a").addEventListener("click", function(){
+        t1 = document.querySelectorAll(".teksti1")
+        for(t in t1){
+            t1[t].style.fontSize = "1em"
+        }
+    });
+    document.querySelector("#butoni2b").addEventListener("click", function(){
+        t1 = document.querySelectorAll(".teksti1")
+        for(t in t1){
+            t1[t].style.fontSize = "1.5em"
+        }
+    });
+    document.querySelector("#butoni2c").addEventListener("click", function(){
+        t1 = document.querySelectorAll(".teksti1")
+        for(t in t1){
+            t1[t].style.fontSize = "2em"
+        }
+    });
+    document.querySelector("#butoni3").addEventListener("click", function(){
+        t1 = document.querySelectorAll(".teksti2")
+        for(t in t1){
+            t1[t].style.color = "red"
+        }
+    });
+    document.querySelector("#butoni4").addEventListener("click", function(){
+        t1 = document.querySelectorAll("p")
+        for(t in t1){
+            t1[t].style.fontWeight = "bold"
+        }
+    });
+    </script>
+</body>
+</html>

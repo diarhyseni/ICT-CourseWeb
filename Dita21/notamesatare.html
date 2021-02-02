@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        notat = [5, 4, 5, 4, 3, 3, 4, 5, 4, 3, 2, 3, 2, 3];
+        shuma = 0;
+        for(n in notat){
+            document.write("<p>" + notat[n] + "</p>")
+            shuma +=notat[n];
+        }
+
+
+        notamesatare= shuma / notat.length
+        document.write("<p>Nota mesatare" + notamesatare.toFixed(2) + "</p>")
+
+        if(notamesatare < 1.5){
+            document.write("Pamjaftueshem")
+        }else if (notamesatare >= 1.5 && notamesatare < 2.5){
+            document.write("Mjaftueshem")
+        }else if (notamesatare >= 2.5 && notamesatare < 3.5){
+            document.write("Mire")
+        }else if (notamesatare >= 3.5 && notamesatare < 4.5){
+            document.write("Shume mire")
+        }else {
+            document.write("Shkelqyeshem")
+        }
+    </script>
+</body>
+</html>

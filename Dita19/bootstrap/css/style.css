@@ -1,0 +1,13 @@
+.btn-group-sm{
+    background-color: yellow;
+}
+.korniza{
+    border: 4px solid green;
+    border-radius: 6px;
+}
+
+.card{
+    box-shadow: 5px 5px 5px gray;
+    border: 2px solid darkblue;
+    background-color: floralwhite;
+}

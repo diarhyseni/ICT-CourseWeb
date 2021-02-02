@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+         let n = Math.floor(Math.random() * 100) + 1;
+        let x = 0;
+
+        do {
+            x++;
+            numri = prompt("Qelloje Numrin");
+            if(n == numri){
+                alert("Ia qellove. Tentime " + x)
+            }else if(n < numri){
+                alert("Numri eshte me i vogel!");
+            }else {
+                alert("Numri eshte me i madh!")
+            }
+        }while (numri != n)
+    </script>
+</body>
+</html>

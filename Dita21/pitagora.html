@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    <script>
+        
+        
+        document.write("<p>"+ pitagora(10,15)+ "</p>")
+        document.write("<p>"+ pitagora(2,78)+ "</p>")
+        document.write("<p>"+ pitagora(65,5)+ "</p>")
+        document.write("<p>"+ pitagora(110,15)+ "</p>")
+
+        function pitagora(x,y) {
+            c = Math.sqrt (x * x + y * y)
+            return c
+        }
+        
+        </script>
+</body>
+</html>

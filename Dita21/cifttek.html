@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="numri"> Sheno nje numer:</label>
+    <input type="number" id="numri">
+
+
+    <button id="butoni" onclick="OddEven()">LLogarit</button>
+    <div id="raportidiv"></div>
+    <script>
+        function OddEven(){
+            let n = parseInt(document.getElementById("numri").value)
+            if(n % 2 == 0){
+                raporti = "cift"
+            }else {
+                raporti = "tek"
+            }
+            document.getElementById("raportidiv").innerHTML = raporti;
+        }
+    </script>
+</body>
+</html>

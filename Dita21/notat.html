@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            display: inline-block;
+            width: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="return kalkulimi()">
+        <div>
+            <label for="matematike">Matematike: </label>
+            <input id="matematike" type="number" min="1" max="5">
+        </div>
+        <div>
+            <label for="fizike">Fizike: </label>
+            <input id="fizike" type="number" min="1" max="5">
+        </div>
+        <div>
+            <label for="kimi">Kimi: </label>
+            <input id="kimi" type="number" min="1" max="5">
+        </div>
+        <div>
+            <label for="shqip">Shqip: </label>
+            <input id="shqip" type="number" min="1" max="5">
+        </div>
+        <div>
+            <label for="anglisht">Anglisht: </label>
+            <input id="anglisht" type="number" min="1" max="5">
+        </div>
+
+        <input type="submit" value="LLOGARITE">
+    </form>
+
+    <div id="raporti"></div>
+
+    <script>
+        function kalkulimi() {
+            let mat = parseInt(document.getElementById("matematike").value)
+            let fiz = parseInt(document.getElementById("fizike").value)
+            let kim = parseInt(document.getElementById("kimi").value)
+            let shq = parseInt(document.getElementById("shqip").value)
+            let ang = parseInt(document.getElementById("anglisht").value)
+
+            nmesatare = (mat + fiz + kim + shq + ang) / 5;
+
+
+            if (nmesatare < 1.5) {
+               suksesi = "<p>Suksesi; Pamjaftueshem </p>"
+            } else if (nmesatare >= 1.5 && nmesatare < 2.5) {
+                suksesi = "<p>Suksesi; Mjaftueshem </p>"
+            } else if (nmesatare >= 2.5 && nmesatare < 3.5) {
+                suksesi = "<p>Suksesi; Mire </p>"
+            } else if (nmesatare >= 3.5 && nmesatare < 4.5) {
+                suksesi = "<p>Suksesi; Shume mire </p>"
+            } else {
+                suksesi = "<p>Suksesi; Shkelqyeshem </p>"
+            }
+
+
+            document.getElementById("raporti").innerHTML = "<p> Nota Mesatare:" + nmesatare + "</p>"  + suksesi  
+            
+            
+            return false
+        }
+    </script>
+
+</body>
+
+</html>

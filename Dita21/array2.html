@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+        let ditet = ["E diele","E hene","E marte","E merkure","E enjte","E premte","E shtune"];
+
+        let data = new Date()
+         dita = data.getDay()
+         for(d = 0; d <= 6; d++){
+             if(d == dita){
+                document.write("<p><strong>"+ ditet[d]+ "</strog></p>");
+             }else {
+                document.write("<p>"+ ditet[d]+ "</p>");
+             }
+         }
+        
+
+
+    </script>
+</body>
+</html>

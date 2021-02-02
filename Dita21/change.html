@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="emri">Sheno emrin: </label>
+        <input type="text" id="emri" name="emri">
+        <label for="emri">Sheno mbiemrin: </label>
+        <input type="text" id="mbiemri" name="mbiemri">
+    </form>
+
+
+    <p>Test your mouse on me!</p>
+
+
+    <script>
+        const e = document.querySelector('#emri');
+
+        e.addEventListener('change', (event) => {
+            alert("Ti e ndryshove emrin!")
+        });
+        e.addEventListener('focus', (event) => {
+            alert("Ti je te fusha emri!")
+        });
+        e.addEventListener('blur', (event) => {
+            alert("Ti u largove nga fusha emri!")
+        });
+
+
+        const p = document.querySelector('p');
+        p.onmouseover = logMouseOver;
+        p.onmouseout = logMouseOut;
+
+        function logMouseOver() {
+            p.style.fontSize = "2em"
+        }
+
+        function logMouseOut() {
+            p.style.fontSize = "1em"
+
+        }
+    </script>
+</body>
+
+</html>

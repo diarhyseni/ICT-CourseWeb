@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        x = 5
+        y = 9
+
+        if( x < 6 && y > 7 ){
+            document.write("<p>E sakte!</p>")
+        }else {
+            document.write("<p>E pasakte!</p>")
+        }
+        //AND Operator
+        /*
+            true && true => true
+            true && false => false
+            false && true => false
+            false && false => false
+        */
+
+
+        x = 5
+        y = 9
+
+        if( x < 6 || y > 7 ){
+            document.write("E sakte!")
+        }else {
+            document.write("E pasakte!")
+        }
+
+        //OR Operato
+        /*
+            true || true => true
+            true || false => true
+            false || true => true
+            false || false => false
+        */
+        //negacioni
+        z=5
+        if (!(z==5)){
+           document.write("<p>Nuk eshte 5 </p>")
+        }else {
+            document.write("<p>Eshte 5 </p>")
+        }
+
+        //Ternaty Operator
+        gj = "f"
+
+        gjinia = (gj =="f") ? "<p>Femer</p>" : "<p>Mashkull<p>"
+
+        
+
+        // if(gj =="f"){
+        //     gjinia = "<p>Femer</p>"
+        // }else if(gj =="m"){
+        //     gjinia = "<p>Mashkull</p>"
+        // }
+
+        document.write(gjinia)
+
+
+
+    </script>
+</body>
+</html>

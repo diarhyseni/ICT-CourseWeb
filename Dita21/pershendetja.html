@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<div>
+    <div id="pershendetja"></div>
+
+        <div id="ora"></div>
+        <script>
+            tregoOren()
+            setInterval(function(){
+                tregoOren();
+            },1000);
+            
+
+            function tregoOren() {
+                data = new Date()
+                ora = data.getHours()
+                if (ora < 10) {
+                    ora = "0" + ora
+                }
+                let minutat = data.getMinutes()
+                if (minutat < 10) {
+                    minutat = "0" + minutat
+                }
+                let sekondat = data.getSeconds()
+                if (sekondat < 10) {
+                    sekondat = "0" + sekondat
+                }
+                document.getElementById("ora").innerHTML = ora + " : " + minutat + " : " + sekondat
+                if (ora < 12) {
+                document.getElementById("pershendetja").innerHTML = "Mirmengjes, vizitore"
+            } else if (ora >= 12 && ora < 19) {
+                document.getElementById("pershendetja").innerHTML = "Miredita, vizitore"
+            } else if (ora >= 19) {
+                document.getElementById("pershendetja").innerHTML = "Mirmbrema"
+             }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
