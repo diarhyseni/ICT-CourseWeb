@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myCanvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+
+<body>
+    <canvas id="myCanvas" width="578" height="200"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+        var x = canvas.width / 2;
+        var y = canvas.height / 2;
+
+        context.font = '30pt Calibri';
+        // textAlign aligns text horizontally relative to placement
+        context.textAlign = 'center';
+        // textBaseline aligns text vertically relative to font style
+        context.textBaseline = 'middle';
+        context.fillStyle = 'blue';
+        context.fillText('Hello World!', x, y);
+    </script>
+</body>
+
+</html>

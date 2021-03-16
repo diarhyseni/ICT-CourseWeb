@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pamja{
+            transform: scale(1.5,1.5);
+        }
+        #teksti{
+            width: 800px;
+            margin: 0 auto;
+            filter:blur(2px);
+            filter: grayscale(0);
+
+
+        }
+        #teksti:hover{
+            /* transform: scale(2); */
+            /* transform: scaleY(1.5); */
+            /* transform: skew(30deg); */
+            filter:blur(0);
+            filter: contrast(200%);
+            /* filter: grayscale(0); */
+            filter: drop-shadow(8px 8px 10px gray);
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="teksti">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, impedit.
+        <img src="pulmoll.jpg" width="100" height="100">
+    </div>
+    <br>
+    <input type="checkbox" id="pamja"> Pamja nga deti
+</body>
+</html>

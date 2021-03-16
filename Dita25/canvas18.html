@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myCanvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+
+<body>
+    <canvas id="myCanvas" width="578" height="200"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+
+        context.rect(188, 40, 200, 100);
+        context.fillStyle = 'red';
+        context.shadowColor = '#999';
+        context.shadowBlur = 20;
+        context.shadowOffsetX = 15;
+        context.shadowOffsetY = 15;
+        context.fill();
+    </script>
+
+</body>
+
+</html>

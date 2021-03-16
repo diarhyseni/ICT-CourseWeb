@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes shembulli1{
+        from{
+            background-color: yellow;
+            width: 400px;
+            border: 1px solid  black;
+            border-radius: 0;
+        }
+
+        to{
+            background-color: lightseagreen;
+            width: 800px;
+            border: 10px solid blue;
+            border-radius: 50%;
+
+        }
+    }
+        @keyframes shembulli2{
+        from{
+            width: 100px;
+        }
+
+        to{
+            width: 400px;
+        }
+    }
+    #teksti1{
+        width: 800px;
+        height: 200px;
+
+    }
+    #teksti1 p{
+        animation-name: shembulli1;
+        animation-duration: 5s;
+        padding: 4em;
+        margin-bottom: 10px;
+        background-color: yellow;
+    }
+    #fotografia{
+        animation-name: shembulli2;
+        animation-duration: 5s;
+        width: 400px;
+    }
+    /* #teksti2{
+        animation-name: shembulli1;
+        animation-duration: 5s;
+        width: 800px;
+        padding: 20px;
+        background-color: thistle;
+    } */
+    </style>
+</head>
+<body>
+    <div id="teksti1">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis ipsam, ex sequi provident accusantium maxime cum nostrum vitae consequatur!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis ipsam, ex sequi provident accusantium maxime cum nostrum vitae consequatur!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis ipsam, ex sequi provident accusantium maxime cum nostrum vitae consequatur!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis ipsam, ex sequi provident accusantium maxime cum nostrum vitae consequatur!</p>
+    
+    </div>
+    <!-- <div id="teksti2">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis ipsam, ex sequi provident accusantium maxime cum nostrum vitae consequatur! Illo mollitia voluptatem harum quis. Saepe alias recusandae laudantium non excepturi?</p>
+    </div> -->
+
+    <img src="pulmoll.jpg" id="fotografia">
+</body>
+</html>
