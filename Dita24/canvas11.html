@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="640" height="240"></canvas>
+
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+
+        context.beginPath();
+        context.arc(288, 75, 70, 30 * Math.PI / 180, (30 * Math.PI / 180) + Math.PI, false);
+        context.closePath();
+        context.fillStyle = 'red';
+        context.fill();
+        context.lineWidth = 5;
+        context.strokeStyle = '#550000';
+        context.stroke();
+    </script>
+</body>
+
+</html>

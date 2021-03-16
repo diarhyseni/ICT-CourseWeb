@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myCanvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>Grafika ne Html</h1>
+        <canvas id="myCanvas" width="650" height="200"></canvas>
+    </div>
+
+
+    <script>
+        // var canvas = document.getElementById('myCanvas'); e njejt po query ma e avancume
+        var canvas = document.querySelector('#myCanvas');
+        var context = canvas.getContext('2d');
+
+        context.beginPath();
+
+        var startAngle = 30 * Math.PI / 180;
+        var endAngle = 270 * Math.PI / 180;
+
+        context.beginPath();
+        context.arc(320, 100, 50, startAngle, endAngle, false);
+        context.lineWidth = 5;
+        context.stroke();
+
+        context.beginPath();
+        context.arc(390, 85, 50, 60 * Math.PI / 180, 120 * Math.PI / 180, true);
+        context.lineWidth = 5;
+        context.strokeStyle = "blue";
+        context.stroke();
+    </script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script> -->
+
+</body>
+
+</html>

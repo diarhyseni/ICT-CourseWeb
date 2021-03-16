@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="lightbox/dist/css/lightbox.min.css">
+</head>
+<body>
+   
+    <div>
+        <a href="gallery/pulmoll_1.jpg" 
+        data-lightbox="produktet"
+         data-title="Pulmoll">
+         <img src="gallery/pulmoll.jpg" alt=""/></a>
+
+        <a href="gallery/mineral_1.jpg" 
+        data-lightbox="produktet"
+         data-title="Uje Mineral 2L">
+         <img src="gallery/mineral.jpg" alt=""/></a>
+
+        <a href="gallery/natyral_1.jpg" 
+        data-lightbox="produktet"
+         data-title="Uje Natyral 2L">
+         <img src="gallery/natyral.jpg" alt=""/></a>
+        <a href="gallery/qumsht_1.jpg" 
+        data-lightbox="produktet"
+         data-title="Qumesht 1L">
+         <img src="gallery/qumsht.jpg" alt=""/></a>
+      </div>
+
+
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="lightbox/dist/js/lightbox.min.js"></script>
+    <script>
+        lightbox.option({
+          'fadeDuration': 500,
+          'wrapAround': true
+        })
+    </script>
+</body>
+</html>

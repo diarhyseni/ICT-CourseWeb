@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simple Accordion</h1>
+<div id="accordion">
+  <div class="button" role="button">
+    BUTTON 1
+  </div>
+  <div class="slide">
+    <p>a really small line of text</p>
+  </div>
+  <div class="button" role="button">
+    BUTTON 2
+  </div>
+  <div class="slide">
+    <p>Legal aid stakeholders change replicable sustainable. Developing nations effectiveness recognize potential change-makers poverty fundraise solutions save lives detection. Rural development prosperity catalyze natural resources board of directors.
+      Small-scale farmers empowerment country social impact end hunger theory of social change global citizens. Medicine; implementation hack; committed participatory monitoring readiness global leaders Bill and Melinda Gates. Equal opportunity, insurmountable
+      challenges thinkers who make change happen Peace Corps outcomes. Pride nonviolent resistance, peaceful measures synthesize our ambitions Rockefeller accessibility inspiration. Medical disrupt achieve; campaign positive social change recognition.</p>
+
+    <p>Donate; investment altruism revitalize, Action Against Hunger. Human experience frontline maintain, political lifting people up progress Nelson Mandela. Equity UNICEF climate change capacity building long-term. International inspire social change
+      safety smart cities design thinking. Readiness; Cesar Chavez making progress enabler affordable health care. Equality, protect challenges respond tackle empower involvement; social challenges socio-economic divide. Mobilize.</p>
+
+    <p>Aga Khan protect social entrepreneurship rural development health innovate, Angelina Jolie education fundraising campaign affordable health care. Rosa Parks support worldwide collaborative cities Kony 2012 working families smart cities. Metrics emergency
+      response donate, social good, best practices evolution; time of extraordinary change enable meaningful visionary insurmountable challenges.</p>
+  </div>
+  <div class="button" role="button">
+    BUTTON 3
+  </div>
+  <div class="slide">
+    <p>Aga Khan protect social entrepreneurship rural development health innovate, Angelina Jolie education fundraising campaign affordable health care. Rosa Parks support worldwide collaborative cities Kony 2012 working families smart cities. Metrics emergency
+      response donate, social good, best practices evolution; time of extraordinary change enable meaningful visionary insurmountable challenges.</p>
+
+    <p>Pathway to a better life UNHCR, transform, benefit Martin Luther King Jr. Rockefeller equity voice committed. Partner effectiveness planned giving Medecins du Monde truth; mobilize John Lennon achieve replicable celebrate. Global health affiliate,
+      facilitate, capacity building, challenges of our times innovation catalyze. Agency crowdsourcing positive social change Bloomberg altruism Cesar Chavez. Institutions, Jane Addams; resourceful 501(c)(3) accelerate progress, United Nations, solution
+      Action Against Hunger humanitarian governance life-saving vulnerable citizens. Inclusive capitalism growth cause, honesty; change movements diversity.</p>
+  </div>
+</div>
+<script src="jquery-3.5.1.min.js"></script>
+<script>
+    ///----- Auto-Close Accordion
+$(document).ready(function() {
+  //--- initial state of elements
+  $('.slide').hide()
+    //----- click function
+  $("#accordion").find("div[role|='button']").click(function() { //---- tabs or buttons
+    //---- active class
+    $("#accordion").find("div[role|='button']").removeClass('active');
+    $('.slide').slideUp('fast');
+    var selected = $(this).next('.slide');
+    if (selected.is(":hidden")) {
+      $(this).next('.slide').slideDown('fast');
+      $(this).toggleClass('active');
+    }
+  });
+});
+</script>
+</body>
+</html>

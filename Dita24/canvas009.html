@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<canvas id="myCanvas" width="640" height="240"></canvas>
+<script>
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+
+    context.beginPath();
+    
+    context.rect(188, 50, 200, 100);
+    context.fillStyle = 'yellow';
+    context.lineWidth = 7;
+    context.strokeStyle = 'blue';
+   context.globalCompositeOperation= 'destination-over';
+    context.fill();
+    context.stroke();
+
+
+    context.beginPath();
+    
+    context.rect(350, 120, 120, 60);
+    context.fillStyle = 'orange';
+    context.lineWidth = 7;
+    context.strokeStyle = 'darkgreen';
+    
+   
+    context.fill();
+    context.stroke();
+</script>
+</body>
+</html>

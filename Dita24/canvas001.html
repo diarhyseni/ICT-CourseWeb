@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #myCanvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+
+        <h1>Grafika ne html</h1>
+        <canvas id="myCanvas" width="650" height="200"></canvas>
+    </div>
+
+
+    <script>
+        var canvas = document.querySelector('#myCanvas');
+        var context = canvas.getContext('2d');
+
+
+        context.beginPath();
+        context.moveTo(50, 10);
+        context.lineTo(630, 120);
+        context.stroke();
+
+        for (x = 0; x <= 650; x = x + 50) {
+
+            context.beginPath();
+            context.moveTo(630, 120);
+            context.lineTo(x, 190);
+            context.lineWidth = x / 50;
+            context.strokeStyle = "rgb(" + (x / 3) + "," + (255 - (x / 3)) + ",56)";
+            context.lineCap = 'round';
+            context.stroke();
+        }
+    </script>
+
+
+</body>
+
+</html>

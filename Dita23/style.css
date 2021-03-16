@@ -1,0 +1,36 @@
+@import 'https://fonts.googleapis.com/css?family=Secular+One';
+
+h1 {
+  text-align: center; 
+  text-transform: uppercase;
+  font-family: 'Secular One', Arial, Helvetica, sans-serif; 
+  font-size: 43px;
+}
+#accordion {
+  margin-top: 10px;
+}
+
+.button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  max-width: 85%;
+  margin: 0 auto;
+  border-bottom: 2px solid white;
+  border-radius: 10px;
+  font-family: 'Secular One', Arial, Helvetica, sans-serif; 
+}
+
+.button:hover {
+  background-color: red;
+}
+
+.slide {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.active {
+  background-color: red;
+}

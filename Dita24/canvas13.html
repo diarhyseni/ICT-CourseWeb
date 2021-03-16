@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="640" height="200"></canvas>
+
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+
+        context.rect(0, 0, canvas.width, canvas.height);
+
+        var grd = context.createRadialGradient(338, 100, 20, 238, 50, 400);
+        grd.addColorStop(0, 'cyan');
+        grd.addColorStop(0.5, 'yellow');
+        grd.addColorStop(0.7, 'white');
+        grd.addColorStop(1, 'blue');
+        context.fillStyle = grd;
+        context.fill();
+    </script>
+</body>
+
+</html>

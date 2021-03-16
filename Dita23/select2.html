@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <select name="muajt" id="muajt" style="width: 200px;">
+        <option value="1">Janar</option>
+        <option value="2">Shkurt</option>
+        <option value="3">Mars</option>
+        <option value="4">Prill</option>
+        <option value="5">Maj</option>
+        <option value="6">Qeshor</option>
+    </select>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    $('#muajt').select2();
+});
+    </script>
+</body>
+</html>
